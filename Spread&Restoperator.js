@@ -1,8 +1,3 @@
-/*
-Spread operator-> Expands an array / object into individual values.
-Rest operator-> Collects multiple values into one array / object. 
-*/
-
 // spread operator
 //arrays : 
 const arr1 = [1,2,3]
@@ -25,6 +20,6 @@ console.log("sum of 1 to 5 : "+sum(1,2,3,4,5))
 //rest with obejct destructuring 
 const {a,...others}={ a:1,b:2,c:3,d:4}
 console.log(a,others)
-//practice code:
+//practice code
 function int(...nums) {return nums};
 console.log(int(1,2,3,4))
