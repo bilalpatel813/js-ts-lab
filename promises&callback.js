@@ -34,6 +34,26 @@ fetchData()
 .then(data=>{console.log(data)})
 .catch(err=>{console.error(err)})
 .finally(()=>{console.log("done")});
+
+//Async-Await 
+async function getAllData(){
+    console.log("getting async data 1 :")
+    await getdata(1);
+    console.log("getting async data 2 :")
+    await getdata(2);
+    console.log("getting async data 3 :")
+    await getdata(3);
+}
+//getAllData() uncomment when running async getAllData func. 
+//IIFE : imediately invoked function Expression
+(async function(){
+    console.log("getting async data 1 :")
+    await getdata(1);
+    console.log("getting async data 2 :")
+    await getdata(2);
+    console.log("getting async data 3 :")
+    await getdata(3);
+})();
 //practice program: 
 function getinfo(info){
     return new Promise((resolve,reject)=>{
