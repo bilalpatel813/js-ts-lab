@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Voting App 2026</title>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    body {
+      background: #eef2f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    
+    .card {
+      width: 100%;
+      max-width: 450px;
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+    }
+    
+    .header {
+      background: linear-gradient(135deg, #0d6efd, #4f9dff);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .header h1 {
+      font-size: 30px;
+    }
+    
+    .content {
+      padding: 25px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    
+    input,
+    select {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      outline: none;
+    }
+    
+    input:focus,
+    select:focus {
+      border-color: #0d6efd;
+    }
+    
+    button {
+      width: 100%;
+      padding: 14px;
+      background: #0d6efd;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      color: white;
+      cursor: pointer;
+      transition: .3s;
+    }
+    
+    button:hover {
+      background: #0056d2;
+    }
+    
+    #result {
+      margin-top: 20px;
+      padding: 15px;
+      background: #e7f7ec;
+      border-left: 5px solid green;
+      font-weight: bold;
+      display: none;
+      border-radius: 8px;
+    }
+  </style>
+  
+</head>
+
+<body>
+  
+  <div class="card">
+    
+    <div class="header">
+      <h1>🗳 Voting App 2026</h1>
+    </div>
+    
+    <div class="content">
+      
+      <label>Full Name</label>
+      <input type="text" id="name">
+      
+      <label>Age</label>
+      <input type="number" id="age">
+      
+      <label>Select Party</label>
+      
+      <select id="user_vote">
+        <option>BJP</option>
+        <option>Congress</option>
+        <option>AAP</option>
+        <option>Shiv Sena</option>
+        <option>NOTA</option>
+      </select>
+      
+      <button type="button" onclick="displayData()">Submit Vote</button>
+      
+      <div id="result"></div>
+      
+    </div>
+    
+  </div>
+  
+  <script src="VotingApp.js"></script>
+  
+</body>
+
+</html>
