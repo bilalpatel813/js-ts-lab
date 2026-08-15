@@ -48,6 +48,23 @@ let userpost :Ipost ={
   extra: user
 }
 console.log("post: ",userpost);
+//generics
+interface Ipost2 <T>{
+  id :number;
+  name:string;
+  title:string;
+  desc:string;
+  extra : T[]
+}
+const user2 : Ipost2 <String> = {
+  id : 2,
+  name:"BilalUser",
+  title:"coding challenge",
+  desc:"DSA Leetcode Q no. 2995",
+  extra: ["leetcode","neetcode"]
+}
+
+console.log("user2",user2);
 
 
 
