@@ -6,6 +6,7 @@ export const metadata ={
 } ;
 export default function Home() {
   return (
+    <>
     <div>
     <h1> home page  </h1>
       <Link href="/profile">profile  </Link>
@@ -17,5 +18,7 @@ export default function Home() {
       <Link href="/customer">customer   </Link>
       
     </div>
+    <div><Link href="/articles">News Articles</Link></div>
+      </>
   );
 }
