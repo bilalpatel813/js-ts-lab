@@ -11,8 +11,7 @@ const  navLink=[
 
 export default function AuthLayout({ children }: {children:React.ReactNode;}) {
   return (
-    <html
-      lang="en">
+    <html lang="en">
       <body>
         <header style ={{
       backgroundColor: "Lightblue",
