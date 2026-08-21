@@ -24,3 +24,29 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@import "tailwindcss";
+
+@theme {
+  /* Backgrounds */
+  --color-bg: #0B0906;              /* Main page background */
+  --color-bg-soft: #100D09;         /* Sidebar, secondary background */
+  --color-surface: #17130E;         /* Cards, inputs, panels */
+  --color-surface-2: #1D1811;       /* Active/elevated cards */
+  --color-surface-hover: #241E15;   /* Hover states */
+
+  /* Text */
+  --color-ink: #F4EEE2;             /* Primary text, headings */
+  --color-ink-soft: #C7BEAC;        /* Secondary/body text */
+  --color-ink-muted: #867D6D;       /* Muted text, labels, timestamps */
+
+  /* Orange / Primary */
+  --color-accent: #E3893C;          /* Primary buttons, active states, badges */
+  --color-accent-2: #F2A75E;        /* Button highlights, links, emphasis */
+
+  /* Gold */
+  --color-gold: #C7A467;             /* Logo, public workspace, decorative accents */
+
+  /* Sage / Security */
+  --color-sage: #7EA07C;             /* Security, encryption, online status */
+}
