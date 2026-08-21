@@ -5,8 +5,7 @@ export default function Notifications() {
   return (
     <Card>
       <div>Notifications</div>
-      <div>
-      </div>
+      <Link href="/dashboard/archived">archived Notifications</Link>
     </Card>
   );
 }
